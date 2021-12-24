@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Abdullah Alyabroude - Portfolio</title>
+	<!-- adding view port tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="#icon" type="image/x-icon"/>
+		<link rel=" stylesheet "  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<!-- your logo will be here -->
+		<img src="img/alogo.jpg" alt="loto" class="navigation__logo page-header__item">
+		<nav class="main-navigation page-header__item">
+			<ul role="menubar" class="navigation-list">
+				<li role="presentation">
+					<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+				</li>
+
+				<li role="presentation" class="navigation-list__item">
+					<a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+				</li>
+
+				<li role="presentation">
+					<a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+				</li>
+
+				<li role="presentation">
+					<a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main content -->
+	<section class ="profile">
+		<h1>Pokedex project details</h1>
+        <h2>Objective</h2>
+        <p>To buile a small web application with HTML, CSS and JavaScript
+            that loads data from an external API and enavbles the viewing of datapoints in detail
+        </p>
+        <h2>Steps to build the project</h2>
+        <h3>Step One</h3>
+        <ol>
+            <li>Creating a GitHub repository with the name Pokedex</li>
+            <li>Creating the files index.html README.md styles.css and js file</li>
+            <li>connect the files with each others </li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/0e375818b13eb2afabf850edafa8629c2ba2320e" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Step Two</h3>
+        <ol>
+            <li>Create a new variable called pokemonList and assign to it a blank array. This array contains Pokémon data to display in the application</li>
+            <li>add several objects to the array. Each object represents one Pokémon and needs to have the same keys to avoid errors</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/5f60daa3c2ffda1f6b5fdbcf8ec99e2174010aa8" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Step Three</h3>
+        <ol>
+            <li>wrap your pokemonList array in an IIFE to avoid accidentally accessing the global state</li>
+            <li>create a new pokemonRepository variable to hold what  IIFE will return, then assign the IIFE to that variable.</li>
+            <li>The IIFE should return an object with the following public functions assigned as keys:
+                getAll: return all items (pokemonRepository.getAll(); should return the pokemonList array)
+                add: add a single item to the pokemonList array (calling pokemonRepository.add(item); should add the Pokémon referred to with item to the pokemonList array)
+            </li>
+            <li>use one of the two functions returned by the IIFE in order to retrieve the pokemonList array</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/ea82bf7f45577b43f2ac5ec52e62afdd8dd5d60a" target="_blank"> github </a></li>
+        </ol>
+        <h3>Step four</h3>
+        <ol>
+            <li>create an addListItem() in  IIFE. Using the function inside  forEach() loop to create a button for each Pokémon in the array</li>
+            <li>add an event listener to each newly created button for each Pokémon in the list</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/eae88249c804ca11d34a802906c37958e3f059b4" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Step five</h3>
+		<ol>
+            <li>Add polyfills for promises and fetch to the project</li>
+            <li>Add functions inside  data repository to load data from an external source</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/fac643740f02a38e448d71c243eb3323a4834d94" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Step six</h3>
+		<ol>
+            <li>Add Bootstrap to the project</li>
+            <li>create a modal in js file</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/2e0c7b571b8f72510e9eb19bfb7e4aa622593ca7" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Step seven</h3>
+		<ol>
+            <li>Edit the showDetails() method of the application to show a modal with the Pokémons name, its height, and an image of the Pokémon</li>
+            <li>Use the proper Bootstrap utility classes in the application</li>
+            <li>Replace the modal in “index.html” with the Bootstrap modal.</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex/commit/154e5a30e3f1df9c2ff9485af354b6e7817476f4" target="_blank"> github </a></li>
+        </ol>
+
+        <h3>Final step</h3>
+		<ol>
+            <li>Add an “.eslintrc” file to the root of the project</li>
+            <li>Fix  linting issues</li>
+            <li>commit to <a href="https://github.com/abuomar85/Pokedex" target="_blank"> github </a></li>
+        </ol>
+	</section>
+    <section>
+        <h2>Screenshots from the app</h2>
+        <p>show a list of pokemons</p>
+        <img src="./img/listofpokemons.png" style="width: 700px; height: 500px;" alt="a list of poekmons">
+
+        <p>show a pokemon model</p>
+        <img src="./img/pokemonmodal.png" style="width: 700px; height: 500px;" alt="pokemon modal">
+
+    </section>
+
+	<!--Add a layout for your footer -->
+	<footer class="page-footer">
+		<p>find me on</p>
+		<div class="social-media">
+			<a href="https://github.com/abuomar85" target="_blank"><img src="img/github_icon.svg" alt="github"></a>
+			<a href="https://twitter.com/abu_alyabrode" target="_blank"> <img src="img/twitter_icon.svg" alt="Twitter"></a>
+			<a href="https://www.linkedin.com/in/abdullah-alyabroude-706a1615a/" target="_blank"><img src="img/linkedIn_icon.svg"  style="width:30px; height:30px" alt="LinkedIn"></a>
+		</div>
+	</footer>
+
+
+
+	<!--helps visualize how your site performs with assistive technologies -->
+	<script src="js/tota11y.min.js"></script>
+
+</body>
+</html>
