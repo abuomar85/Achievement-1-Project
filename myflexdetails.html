@@ -41,27 +41,41 @@
 
 	<!-- Main content -->
 	<section class ="profile">
-		<h1>Pokedex project details</h1>
+        <h1>myFlex project details</h1>
         <h2>Objective</h2>
-        <p>To buile a small web application with HTML, CSS and JavaScript
-            that loads data from an external API and enavbles the viewing of datapoints in detail
+        <p>To build the server-side component of a "movie" web application.
+            The application will provide users with access information about different 
+            movies, directors, and genres. Users will be able to sign up, update theirf
+            information, and create a list of their movies
         </p>
-        <h2>User Goals </h2>
-        <p>The user will be able to view a list of pokemons and see more details 
-            for agiven item on demand 
+        <h2>Context</h2>
+        <p>crate a REST API for the application that interacts with a database
+            that store data about different movies
         </p>
-        <h2>User stories</h2>
-        <p>As I user I want to see a list of pokemon so that I can decide which one I can choose</p>
-        <p>As I user I want to see more details about the I item I clicke so that decide which pokemon is match to me</p>
-        
+        <h2>User Stories</h2>
+        <ul>
+            <li> As a user , I want to be able to recieve information on movies, directors, and genres so that
+                I can learn more about movies I'v watched or am interested in.
+            </li>
+            <li>
+                As a user, I want to be able to create a profile so I can save data about my favorite movies 
+            </li>    
+        </ul>
+        <h2>Essential features</h2>
+        <ul>
+            <li>Return a list of all movies</li>
+            <li>Return data (description, genre, director, image URL, whether its featured or not) about a
+                single movie by title to the user </li>
+            <li>Return data about a genre (description) by name (e.g "comedy")</li>
+            <li>Return data about a director (bio , birth year, death year) by name</li>
+            <li>allow new users to register</li>
+            <li>Allow users to update their user info </li>
+            <li>Allow users to add a movie to their list of favorite</li>
+            <li>Allow users to remove a movie to their list of favorite</li>
+            <li>Allow existing users to deregister</li>    
+        </ul>
+	</section>
     <section>
-        <h2>Screenshots from the app</h2>
-        <p>show a list of pokemons</p>
-        <img src="./img/listofpokemons.png" style="width: 700px; height: 500px;" alt="a list of poekmons">
-
-        <p>show a pokemon model</p>
-        <img src="./img/pokemonmodal.png" style="width: 700px; height: 500px;" alt="pokemon modal">
-
     </section>
 
 	<!--Add a layout for your footer -->
